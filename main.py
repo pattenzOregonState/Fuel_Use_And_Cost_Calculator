@@ -12,13 +12,13 @@ def gas_use_price_calc(mpg, model, electric):
     expense_2 = round(gas_used*(5.92*(not electric) + 33.7*0.3*electric), 2)
     if electric:
         print(
-            str(model) + " uses the equivalent of " + str(round(gas_used, 2)) + " gallons of gas, and it costs $" +
-            str(expense_1) + " if charged at home and $" + str(expense_2) + " if charged at a charging station."
+            str(model) + " uses the equivalent of " + str(round(gas_used, 2)) + " gallons of gas, and it costs " +
+            str(expense_1) + "$ if charged at home and " + str(expense_2) + "$ if charged at a charging station."
         )
     else:
         print(
-            str(model) + " use(s) " + str(round(gas_used, 2)) + " gallons of gas, and it costs $" +
-            str(expense_1) + " in Oregon and $" + str(expense_2) + " in California."
+            str(model) + " use(s) " + str(round(gas_used, 2)) + " gallons of gas, and it costs " +
+            str(expense_1) + "$ in Oregon and " + str(expense_2) + "$ in California."
         )
 
 
